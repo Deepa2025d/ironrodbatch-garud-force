@@ -332,7 +332,7 @@ by mastering modern tools and deploying real-world applications.
 <p>Created using HTML & CSS | Ready to Deploy on Apache Tomcat</p>
 
 <p style="margin-top:15px;">
-© 2026 DevOps Learning Project
+    <h1>© 2026 DevOps Learning Project</h1>
 </p>
 
 </footer>

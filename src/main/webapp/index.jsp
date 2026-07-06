@@ -3,157 +3,155 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DevOps Learning Journey</title>
+<title>DevOps Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f7fa;
-    color:#333;
+background:linear-gradient(135deg,#0f172a,#1d4ed8,#0ea5e9);
+color:white;
 }
 
 header{
-    background:linear-gradient(135deg,#0f172a,#2563eb);
-    color:white;
-    padding:60px 20px;
-    text-align:center;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
 }
 
 header h1{
-    font-size:48px;
+font-size:60px;
+margin-bottom:20px;
+}
+
+header span{
+color:#FFD700;
 }
 
 header p{
-    margin-top:15px;
-    font-size:20px;
-}
-
-nav{
-    background:#1e293b;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:15px 25px;
-    transition:.3s;
-}
-
-nav a:hover{
-    background:#2563eb;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-.section{
-    margin:50px 0;
-}
-
-.section h2{
-    text-align:center;
-    color:#2563eb;
-    margin-bottom:20px;
-    font-size:32px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    border-radius:10px;
-    padding:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card h3{
-    color:#0f172a;
-    margin-bottom:15px;
-}
-
-.card p{
-    line-height:1.7;
-}
-
-.timeline{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.step{
-    background:#2563eb;
-    color:white;
-    border-radius:10px;
-    padding:20px;
-    text-align:center;
-}
-
-.step h3{
-    margin-bottom:10px;
-}
-
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-}
-
-.skill{
-    background:#0f172a;
-    color:white;
-    padding:12px 22px;
-    border-radius:30px;
-}
-
-footer{
-    margin-top:60px;
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:25px;
+font-size:22px;
+margin-bottom:30px;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:25px;
-    background:#ff9800;
-    color:white;
-    padding:15px 30px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
+padding:15px 35px;
+background:#FFD700;
+color:#111;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.3s;
 }
 
 .btn:hover{
-    background:#e68900;
+transform:scale(1.08);
+background:white;
+}
+
+nav{
+position:sticky;
+top:0;
+background:#111827;
+display:flex;
+justify-content:center;
+padding:15px;
+z-index:999;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-size:18px;
+}
+
+nav a:hover{
+color:#FFD700;
+}
+
+section{
+padding:70px 10%;
+}
+
+h2{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#FFD700;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.12);
+padding:25px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+transition:.3s;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.skill{
+margin-bottom:25px;
+}
+
+.bar{
+background:#555;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:20px;
+background:#FFD700;
+}
+
+footer{
+background:#111827;
+padding:30px;
+text-align:center;
+}
+
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+padding:12px 18px;
+border:none;
+border-radius:50%;
+font-size:22px;
+cursor:pointer;
+background:#FFD700;
 }
 
 @media(max-width:768px){
 header h1{
-font-size:35px;
+font-size:38px;
 }
 
 header p{
@@ -166,176 +164,216 @@ font-size:18px;
 
 <body>
 
-<header>
-
-<h1>🚀 DevOps Learning Journey</h1>
-
-<p>Learning Git • GitHub • Linux • Docker • Maven • Jenkins • Tomcat • AWS</p>
-
-<a href="#roadmap" class="btn">Explore My Roadmap</a>
-
-</header>
-
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#roadmap">Roadmap</a>
-<a href="#projects">Projects</a>
+<a href="#workflow">Workflow</a>
 </nav>
 
-<div class="container">
+<header>
 
-<section class="section" id="about">
+<h1>🚀 <span>DevOps Engineer</span></h1>
 
-<h2>About Me</h2>
+<p>Learn • Build • Deploy • Automate</p>
+
+<a href="#about" class="btn">Explore</a>
+
+</header>
+
+<section id="about">
+
+<h2>👨‍💻 About Me</h2>
+
+<div class="cards">
 
 <div class="card">
-
+<h3>🚀 DevOps Student</h3>
 <p>
-Hello! I'm a DevOps student passionate about automation, cloud computing,
-CI/CD, and infrastructure management. My goal is to become a DevOps Engineer
-by mastering modern tools and deploying real-world applications.
+I am learning Linux, Git, GitHub, Docker, Maven, Jenkins,
+Tomcat, AWS and Kubernetes to become a DevOps Engineer.
 </p>
-
 </div>
 
-</section>
-
-<section class="section" id="skills">
-
-<h2>DevOps Skills</h2>
-
-<div class="skills">
-
-<div class="skill">Linux</div>
-<div class="skill">Git</div>
-<div class="skill">GitHub</div>
-<div class="skill">Docker</div>
-<div class="skill">Maven</div>
-<div class="skill">Tomcat</div>
-<div class="skill">Jenkins</div>
-<div class="skill">AWS EC2</div>
-<div class="skill">Shell Scripting</div>
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-
-</div>
-
-</section>
-
-<section class="section" id="roadmap">
-
-<h2>DevOps Roadmap</h2>
-
-<div class="timeline">
-
-<div class="step">
-<h3>Step 1</h3>
-<p>Learn Linux Commands</p>
-</div>
-
-<div class="step">
-<h3>Step 2</h3>
-<p>Git & GitHub</p>
-</div>
-
-<div class="step">
-<h3>Step 3</h3>
-<p>Maven Build Tool</p>
-</div>
-
-<div class="step">
-<h3>Step 4</h3>
-<p>Apache Tomcat Deployment</p>
-</div>
-
-<div class="step">
-<h3>Step 5</h3>
-<p>Docker Containers</p>
-</div>
-
-<div class="step">
-<h3>Step 6</h3>
-<p>Jenkins CI/CD Pipeline</p>
-</div>
-
-<div class="step">
-<h3>Step 7</h3>
-<p>AWS Cloud Deployment</p>
-</div>
-
-<div class="step">
-<h3>Step 8</h3>
-<p>Kubernetes</p>
+<div class="card">
+<h3>🎯 Goal</h3>
+<p>
+Build CI/CD pipelines and deploy scalable applications
+on cloud platforms.
+</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="section" id="projects">
+<section id="skills">
 
-<h2>My Deployment Workflow</h2>
+<h2>🛠 Skills</h2>
+
+<div class="skill">
+Linux
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+Git
+<div class="bar"><div class="fill" style="width:95%"></div></div>
+</div>
+
+<div class="skill">
+GitHub
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+Docker
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+Maven
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+Tomcat
+<div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+
+<div class="skill">
+Jenkins
+<div class="bar"><div class="fill" style="width:70%"></div></div>
+</div>
+
+<div class="skill">
+AWS
+<div class="bar"><div class="fill" style="width:70%"></div></div>
+</div>
+
+</section>
+
+<section id="roadmap">
+
+<h2>🗺 DevOps Roadmap</h2>
+
+<div class="cards">
+
+<div class="card">🐧 Linux</div>
+<div class="card">📂 Git</div>
+<div class="card">🐙 GitHub</div>
+<div class="card">📦 Maven</div>
+<div class="card">🐱 Tomcat</div>
+<div class="card">🐳 Docker</div>
+<div class="card">⚙ Jenkins</div>
+<div class="card">☁ AWS</div>
+<div class="card">☸ Kubernetes</div>
+
+</div>
+
+</section>
+
+<section id="workflow">
+
+<h2>⚙ Deployment Workflow</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>💻 VS Code</h3>
-<p>Create and edit the application source code.</p>
+<p>Develop Application</p>
 </div>
 
 <div class="card">
-<h3>📁 Git</h3>
-<p>Track every change using version control.</p>
+<h3>📂 Git</h3>
+<p>Version Control</p>
 </div>
 
 <div class="card">
-<h3>☁ GitHub</h3>
-<p>Store the project in a remote repository.</p>
+<h3>🐙 GitHub</h3>
+<p>Remote Repository</p>
+</div>
+
+<div class="card">
+<h3>☁ EC2</h3>
+<p>Host Application</p>
 </div>
 
 <div class="card">
 <h3>📦 Maven</h3>
-<p>Build the project and generate a WAR file.</p>
+<p>Build WAR File</p>
 </div>
 
 <div class="card">
-<h3>🖥 Tomcat</h3>
-<p>Deploy the WAR file as a web application.</p>
-</div>
-
-<div class="card">
-<h3>⚙ Jenkins</h3>
-<p>Automate build and deployment with CI/CD.</p>
-</div>
-
-<div class="card">
-<h3>☁ AWS EC2</h3>
-<p>Host the application on a cloud server.</p>
+<h3>🐱 Tomcat</h3>
+<p>Deploy Web Application</p>
 </div>
 
 <div class="card">
 <h3>🌐 Browser</h3>
-<p>Access the deployed application from anywhere.</p>
+<p>Access from Anywhere</p>
 </div>
 
 </div>
 
 </section>
 
-</div>
-
 <footer>
 
 <h2>🎉 Successfully Learning DevOps</h2>
 
-<p>Created using HTML & CSS | Ready to Deploy on Apache Tomcat</p>
+<p id="clock"></p>
+
+<br>
+
+<p>❤️ Built with HTML, CSS & JavaScript</p>
+
+<p>🚀 Ready to Deploy on Apache Tomcat</p>
 
 <p style="margin-top:15px;">
-    <h1>© 2026 DevOps Learning Project</h1>
+© 2026 DevOps Learning Project
 </p>
 
 </footer>
+
+<button id="topBtn" onclick="topFunction()">⬆</button>
+
+<script>
+
+function updateClock(){
+
+let d=new Date();
+
+document.getElementById("clock").innerHTML=
+"🕒 "+d.toLocaleString();
+
+}
+
+setInterval(updateClock,1000);
+
+updateClock();
+
+let btn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.body.scrollTop>300||document.documentElement.scrollTop>300)
+
+btn.style.display="block";
+
+else
+
+btn.style.display="none";
+
+}
+
+function topFunction(){
+
+window.scrollTo({top:0,behavior:'smooth'});
+
+}
+
+</script>
 
 </body>
 </html>
